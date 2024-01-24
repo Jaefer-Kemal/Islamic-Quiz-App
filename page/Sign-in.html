@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="head">
+        <h1 class="log">Islamic Quiz</h1>
+        <div><nav class="navigation">
+            <a href="../index.html">Home</a>
+            <a href="#">Quiz</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <button onclick="redirectToSignIn()" type="submit" class="btnlogin">Login
+            </button>
+            </nav>
+    </header>
+        <main>
+            <div class="wrapper">
+            
+                <div class="form-box" id="form-box"><form onsubmit="signin(event)" action="./DashBoard.html">
+                    <h2>Login</h2>
+                    <div class="input-box">
+                        <label for="Email">Email</label>
+                        <input id="email" type="text" pattern="[^ @]*@[^ @]*" placeholder="Email" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="Password">Password</label>
+                        <input id="password" type="password" placeholder="Password" minlength=5 maxlength=25 required>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input id="rememberMe" type="checkbox">Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="lo-btn">Login</button>
+                    
+                    <div class="register-me">
+                        <p>Dont't have an account? <a href="./Sign-up.html">Register Now</a></p>
+                    </div>
+
+
+                </form>
+</div>
+                
+            </div>
+
+
+        </main>
+        
+
+
+        </nav></div>
+    <script src="../script/main.js">
+    </script>
+
+
+
+</body>
+</html>

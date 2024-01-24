@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin:0px;
+    padding:0;
+    font-family:'Roboto', sans-serif;
+    box-sizing: border-box;
+    
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(/assets/islamic2.jpg);
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    margin: 0;
+}
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+
+}
+
+.log{
+    color:white;
+    user-select: none;
+    font-size: 2em;
+}
+.logo-link{
+    text-decoration: none;
+}
+.log:hover{
+    font-size:2.1em;
+    color:rgb(223, 223, 223);
+    text-shadow: rgb(255, 255, 255,0.3) 2px 2px;
+}
+
+.navigation a{
+    position: relative;
+    text-decoration: none;
+    color:hsl(180, 100%, 97%);
+    margin-left: 30px;
+    font-size:1.1em;
+    font-weight: 500;
+    width:30;
+    height:100px;
+}
+.navigation a::after{
+    content:" ";
+    position:absolute;
+    height:3px;
+    width:100%;
+    background:white;
+    left:0px;
+    transform-origin: left;
+    bottom: -6px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.navigation a:hover::after{
+    transform: scaleX(1);
+    transform-origin: right;
+    color:rgb(255, 255, 255);
+    
+}
+.navigation a:hover{
+    font-weight: bold;
+}
+.navigation .btnlogin{
+    width: 130px;
+    height:40px;
+    background-color: transparent;
+    border:2px solid hsl(0, 0%, 100%);
+    border-radius: 10px;
+    margin-left: 30px;
+    cursor:pointer;
+    outline: none;
+    font-size: 1.1em;
+    color:white;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.navigation .btnlogin:hover{
+
+background: white;
+color:black
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.wrapper{
+    position: relative;
+    background: transparent;
+    width:400px;
+
+    margin:100px auto;
+    border: 2px solid rgb(255, 255, 255,.5) ;
+    border-radius: 20px;
+    /* backdrop-filter:blur(20px); */
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 30px rgba(0, 0, 0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 0.8s ease-out;
+    overflow-y: auto;
+
+}
+
+
+.wrapper form-box{
+    width:100%;
+    padding: 40px;
+    height: 440px;
+
+}
+
+.wrapper form-box-register{
+    width:100%;
+    padding: 40px;
+    height: 450px;
+}
+
+.form-box h2{
+    color:black;
+    margin-top: 10px;
+    font-size :2em;
+    text-align: center;
+}
+.form-box-register h2{
+    margin-top: 10px;
+    color:black;
+    font-size :2em;
+    text-align: center;
+}
+.input-box{
+position: relative;
+width:100%;
+height:50px;
+margin: 40px 0;
+
+}
+.input-box input{
+    width:100%;
+    height: 100%;
+    border:none;
+    outline: none;
+    padding: 10px;
+    border-bottom: 2px solid rgba(0, 0, 0,0.5);
+    border-top: 0.1px solid grey;
+    font-size: 0.9em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight:500;
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+
+.input-box label{
+    font-weight: bolder;
+  
+}
+.remember-forgot{
+    font-size: .9em;
+    color:black;
+    font-weight: 500;
+    margin:-15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.remember-forgot label input{
+    accent-color: black;
+    margin-right:3px
+}
+.remember-forgot a{
+    text-decoration: none;
+    color:black
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+.re-btn{
+    width:100%;
+    height:45px;
+    border:none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 1em;
+    background-color: black;
+    color:white;
+    cursor:pointer;
+}
+.lo-btn{
+    width:100%;
+    height:45px;
+    border:none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 1em;
+    background-color: black;
+    color:white;
+    cursor:pointer;
+}
+.lo-btn:hover {
+    background: rgba(0, 0, 0,0.8);
+    color: white;
+}
+
+.lo-btn:active {
+    background: rgba(0, 0, 0,0.5); /* Change the color when the button is clicked */
+    color: white;
+}
+.re-btn:hover {
+    background: rgba(0, 0, 0,0.8);
+    color: white;
+}
+
+.re-btn:active {
+    background: rgba(0, 0, 0,0.5); /* Change the color when the button is clicked */
+    color: white;
+}
+.register-me{
+    font-size: 0.95em;
+    color:black;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register-me p a{
+    text-decoration: none;
+    color:black;
+    font-weight: 600px;
+}
+.register-me p a:hover{
+    text-decoration: underline;
+}
+
+
+
+.login-me{
+    font-size: 0.95em;
+    color:black;
+    text-align: center;
+    margin: 10px 0 10px;
+}
+.login-me p a{
+    text-decoration: none;
+    color:black;
+    font-weight: 600px;
+}
+.login-me p a:hover{
+    text-decoration: underline;
+}
+
+
+.welcome-section {
+    animation: fadeIn 1s ease-in-out;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.login-section {
+    animation: fadeIn 3s ease-out;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 5px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.login-message {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: rgb(0, 0, 0); /* Set color to a darker shade */
+}
+
+.login-highlight {
+    color: #a33400; /* Change the color to your preference */
+    font-weight: bold;
+}
+
+.navigation .btnlogged{
+    width: 130px;
+    height:40px;
+    background-color: white;
+    border:2px solid hsl(0, 0%, 100%);
+    border-radius: 10px;
+    margin-left: 30px;
+    
+    outline: none;
+    font-size: 1.1em;
+    color:black;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.navigation .btnlogged:hover{
+
+background: rgb(255, 255, 255,0.8);
+color:black
+}
