@@ -1,6 +1,6 @@
 # Project Name
 
-Islamic Quiz Website
+Deen Quiz Website
 
 ## Description
 
